@@ -1,0 +1,15 @@
+import re
+
+# Take input from user
+s = input("Enter a string: ")
+
+# Display the entered string
+print("Entered string:", s)
+
+# Check each character
+if re.fullmatch("[A-Za-z0-9]+", s):
+    print("The string contains only letters and numbers.")
+    print("Valid string")
+else:
+    print("The string contains special characters.")
+    print("Invalid string")
